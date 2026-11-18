@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Pražírna Káva u pluhu</title> <!-- Unikátní titulek stránky -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Káva u pluhu</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="produkty.html">Produkty</a></li>
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="priprava.html">Příprava</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li> <!-- Aktivní položka menu -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Kontaktujte nás</h1> <!-- Vlastní nadpis H1 -->
+        <p>Máte dotaz k naší kávě nebo chcete udělat větší objednávku? Napište nám.</p>
+
+        <h2>Kde nás najdete</h2>
+        <p><strong>Adresa:</strong> Kávová 12, 110 00 Praha 1</p>
+        <p><strong>E-mail:</strong> info@kavaupluhu.cz</p>
+        <p><strong>Otevírací doba:</strong> Po–Pá 9:00 – 17:00</p>
+
+        <h2>Kontaktní formulář</h2>
+        <!-- Formulář s ID, které později napojíme na JavaScript -->
+        <form id="kontaktni-formular" action="#" method="post">
+            <p>
+                <label for="jmeno">Vaše jméno:</label><br>
+                <input type="text" id="jmeno" name="jmeno">
+            </p>
+            <p>
+                <label for="email">Váš e-mail:</label><br>
+                <input type="email" id="email" name="email">
+            </p>
+            <p>
+                <label for="zprava">Zpráva:</label><br>
+                <textarea id="zprava" name="zprava" rows="4" cols="30"></textarea>
+            </p>
+            <p>
+                <button type="submit">Odeslat zprávu</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Káva u pluhu. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <!-- Připojení externího JavaScriptu -->
+    <script src="script.js"></script>
+    
+</body>
+</html>

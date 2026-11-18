@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- Říká prohlížeči, že jde o HTML5 -->
+<html lang="cs"> <!-- Nastavuje jazyk na češtinu -->
+<head> <!-- Začátek hlavičky -->
+    <meta charset="UTF-8"> <!-- Zajišťuje správné kódování pro háčky a čárky -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Zajišťuje responzivitu pro mobily -->
+    <title>Produkty - Pražírna Káva u pluhu</title> <!-- Unikátní titulek pro tuto stránku -->
+    <link rel="stylesheet" href="style.css"> <!-- Propojení se stejným CSS souborem -->
+</head> <!-- Konec hlavičky -->
+<body> <!-- Začátek těla webu -->
+
+    <!-- HLAVIČKA WEBU A NAVIGACE (stejná na každé stránce) -->
+    <header>
+        <div class="logo">Káva u pluhu</div> <!-- Identifikace webu -->
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="produkty.html" class="active">Produkty</a></li> <!-- Zde je "active", protože jsme na stránce Produkty -->
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="priprava.html">Příprava</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HLAVNÍ OBSAH STRÁNKY S PRODUKTY -->
+    <main>
+        <h1>Naše výběrová káva</h1> <!-- Vlastní nadpis H1 pro tuto stránku -->
+        <p>Vyberte si z naší nabídky čerstvě pražených zrn.</p>
+
+        <!-- Sekce pro produkty (zatím jako jednoduché bloky, později je v CSS rozložíme vedle sebe) -->
+        <div class="produkt-karta">
+            <h2>Kolumbie Supremo</h2>
+            <p>Jemná káva s tóny čokolády a oříšků.</p>
+            <p><strong>Cena: 290 Kč</strong></p>
+            <button>Přidat do košíku</button> <!-- Tlačítko, které později oživíme JavaScriptem -->
+        </div>
+
+        <div class="produkt-karta">
+            <h2>Etiopie Yirgacheffe</h2>
+            <p>Květinová vůně s tóny jasmínu a citrónové kůry.</p>
+            <p><strong>Cena: 320 Kč</strong></p>
+            <button>Přidat do košíku</button>
+        </div>
+    </main>
+
+    <!-- PATIČKA WEBU -->
+    <footer>
+        <p>&copy; 2026 Káva u pluhu. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <!-- Připojení externího JavaScriptu -->
+    <script src="script.js"></script>
+    
+</body> <!-- Konec těla webu -->
+</html> <!-- Konec dokumentu -->
